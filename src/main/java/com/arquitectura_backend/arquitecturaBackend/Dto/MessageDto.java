@@ -1,0 +1,52 @@
+package com.arquitectura_backend.arquitecturaBackend.Dto;
+
+public class MessageDto<T> {
+    private Integer code;
+    private T data;
+    private String message;
+
+    public MessageDto() {
+    }
+
+    public MessageDto(Integer code, T data, String message) {
+        this.code = code;
+        this.data = data;
+        this.message = message;
+    }
+
+
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "ResponseDto{" +
+                "code=" + code +
+                ", data=" + data +
+                ", message='" + message + '\'' +
+                '}';
+    }
+}
+
