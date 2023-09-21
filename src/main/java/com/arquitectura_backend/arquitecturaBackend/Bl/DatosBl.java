@@ -16,6 +16,9 @@ public class DatosBl {
     @Autowired
     private DatosRepository datosRepository;
 
+    @Autowired
+    private DatosVisitor datosVisitor;
+
     //Mostar al usuario y admin todos los datos curiosos de los gatos
     public List<DatosDto> getall() {
         List<Datos> datos = datosRepository.findAll();
@@ -31,25 +34,23 @@ public class DatosBl {
         System.out.println("datosDtos: " + datosDtos);
         return datosDtos;
     }
-    //Guardar los datos (Solo el admin puede guardar)
-    public void guardar(ResponseDto responseDto) {
-        Datos datosDto1 = new Datos();
-        datosDto1.setDato(responseDto.getMensaje());
-        datosDto1.setIdTipo(1);
-        System.out.println("datosDto1: " + datosDto1);
-        datosRepository.save(datosDto1);
 
+
+    //Guardar los datos (Solo el admin )
+    public ResponseDto guardar(ResponseDto responseDto) {
+        datosVisitor.visitGuardar(responseDto);
+        return new ResponseDto("Datos guardados exitosamente");
     }
     //Modificar los datos (Solo el admin)
-    public void modificar(ResponseDto responseDto, Integer id) {
-        Datos datosDto1 = new Datos();
-        datosDto1.setIdDato(id);
-        datosDto1.setDato(responseDto.getMensaje());
-        datosDto1.setIdTipo(1);
-        datosRepository.save(datosDto1);
+    public ResponseDto modificar(ResponseDto responseDto, Integer id) {
+        datosVisitor.visitModificar(responseDto, id);
+        return new ResponseDto("Datos modificados exitosamente");
     }
     //Eliminar los datos (Solo el admin)
-    public void eliminar(Integer id) {
-        datosRepository.deleteById(Long.valueOf(id));
+    public ResponseDto eliminar(Integer id) {
+        datosVisitor.visitEliminar(id);
+        return new ResponseDto("Datos eliminados exitosamente");
     }
+
+
 }
