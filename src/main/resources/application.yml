@@ -21,3 +21,6 @@ spring:
         format_sql: true
 apiDatos:
   url: "https://api.artic.edu/api/v1/artworks"
+logging:
+  level:
+    org.springframework.security: DEBUG
