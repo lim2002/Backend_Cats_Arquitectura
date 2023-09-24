@@ -5,6 +5,8 @@ import com.arquitectura_backend.arquitecturaBackend.Dto.DatosDto;
 import com.arquitectura_backend.arquitecturaBackend.Dto.ResponseDto;
 import com.arquitectura_backend.arquitecturaBackend.Entity.Datos;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,20 +22,19 @@ public class DatosBl {
     private DatosVisitor datosVisitor;
 
     //Mostar al usuario y admin todos los datos curiosos de los gatos
-    public List<DatosDto> getall() {
-        List<Datos> datos = datosRepository.findAll();
-        System.out.println("datos: " + datos);
-        List<DatosDto> datosDtos = new ArrayList<>();
-        for (Datos dato : datos) {
+
+
+    public Page<DatosDto> getall(Pageable pageable) {
+        Page<Datos> datosPage = datosRepository.findAll(pageable);
+        return datosPage.map(dato -> {
             DatosDto datosDto = new DatosDto();
             datosDto.setIdDato(dato.getIdDato());
             datosDto.setDato(dato.getDato());
             datosDto.setIdTipo(dato.getIdTipo());
-            datosDtos.add(datosDto);
-        }
-        System.out.println("datosDtos: " + datosDtos);
-        return datosDtos;
+            return datosDto;
+        });
     }
+
 
 
     //Guardar los datos (Solo el admin )

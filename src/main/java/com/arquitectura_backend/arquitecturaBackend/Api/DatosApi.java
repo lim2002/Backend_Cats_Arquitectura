@@ -5,10 +5,13 @@ import com.arquitectura_backend.arquitecturaBackend.Dto.DatosDto;
 import com.arquitectura_backend.arquitecturaBackend.Dto.MessageDto;
 import com.arquitectura_backend.arquitecturaBackend.Dto.ResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/v1/datos")
@@ -19,16 +22,17 @@ public class DatosApi {
     private DatosBl datosBl;
 
     @GetMapping("/user/")
-    public ResponseEntity<MessageDto<List<DatosDto>>> getDatosCuriososUser() {
-        List<DatosDto> responseDtoList = datosBl.getall();
+    public ResponseEntity<MessageDto<Page<DatosDto>>> getDatosCuriososUser(@PageableDefault(size = 10) Pageable pageable) {
+        Page<DatosDto> datosPage = datosBl.getall(pageable);
         try {
-            return ResponseEntity.ok(new MessageDto<>(200, responseDtoList, "Datos retrieved successfully"));
+            return ResponseEntity.ok(new MessageDto<>(200, datosPage, "Datos retrieved successfully"));
         } catch (Exception e) {
             return ResponseEntity.ok(new MessageDto<>(500, null, "error"));
         }
     }
 
-    @PostMapping("/")
+
+    @PostMapping("/admin/add")
     public ResponseEntity<MessageDto<ResponseDto>> saveDatosCuriosos(@RequestBody ResponseDto responseDto) {
         try {
             datosBl.guardar(responseDto);
@@ -38,7 +42,7 @@ public class DatosApi {
         }
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/admin/edit/{id}")
     public ResponseEntity<MessageDto<ResponseDto>> updateDatosCuriosos(@RequestBody ResponseDto responseDto, @PathVariable int id) {
         try {
             datosBl.modificar(responseDto, id);
@@ -48,7 +52,7 @@ public class DatosApi {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/admin/delete/{id}")
     public ResponseEntity<MessageDto<ResponseDto>> deleteDatosCuriosos(@PathVariable int id) {
         try {
             datosBl.eliminar(id);
