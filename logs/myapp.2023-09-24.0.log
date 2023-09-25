@@ -1,0 +1,96 @@
+2023-09-24 22:53:11.949 [restartedMain] INFO  c.a.a.ArquitecturaBackendApplication - Starting ArquitecturaBackendApplication using Java 20.0.1 with PID 65264 (C:\Users\limbert\Documents\UCB_Documentacion\Septimo_Semestre\Arquitectura\Proyectos\arquitecturaBackend\target\classes started by limbert in C:\Users\limbert\Documents\UCB_Documentacion\Septimo_Semestre\Arquitectura\Proyectos\arquitecturaBackend)
+2023-09-24 22:53:11.953 [restartedMain] INFO  c.a.a.ArquitecturaBackendApplication - The following 1 profile is active: "dev"
+2023-09-24 22:53:12.117 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-24 22:53:12.119 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-24 22:53:14.353 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-24 22:53:14.515 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
+2023-09-24 22:53:16.359 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-24 22:53:16.386 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-24 22:53:16.388 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-24 22:53:16.603 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-24 22:53:16.604 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4483 ms
+2023-09-24 22:53:17.160 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-24 22:53:17.383 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-24 22:53:17.394 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-09-24 22:53:17.948 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-24 22:53:18.467 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-24 22:53:18.514 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-09-24 22:53:18.963 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@816d666
+2023-09-24 22:53:18.967 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-09-24 22:53:19.718 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-24 22:53:21.829 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-24 22:53:21.844 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-24 22:53:22.643 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-24 22:53:23.880 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-24 22:53:24.998 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-09-24 22:53:25.111 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-24 22:53:25.138 [restartedMain] INFO  c.a.a.ArquitecturaBackendApplication - Started ArquitecturaBackendApplication in 16.626 seconds (process running for 19.918)
+2023-09-24 22:55:43.592 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-24 22:55:43.594 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-24 22:55:43.597 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-09-24 22:55:43.763 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:55:43.764 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:55:44.203 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:44.204 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:54.229 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para guardar datos curiosos recibida
+2023-09-24 22:55:54.229 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para guardar datos curiosos recibida
+2023-09-24 22:55:54.230 [http-nio-8081-exec-4] INFO  c.a.a.Bl.DatosVisitorImpl - Visitando método para guardar datos
+2023-09-24 22:55:54.284 [http-nio-8081-exec-4] INFO  c.a.a.Bl.DatosVisitorImpl - Datos guardados exitosamente
+2023-09-24 22:55:54.285 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos guardados exitosamente
+2023-09-24 22:55:54.285 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos guardados exitosamente
+2023-09-24 22:55:54.302 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:55:54.303 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:55:54.311 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:54.311 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:55.705 [http-nio-8081-exec-7] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:55:55.705 [http-nio-8081-exec-7] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:55:55.714 [http-nio-8081-exec-7] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:55.714 [http-nio-8081-exec-7] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:56.214 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:55:56.215 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:55:56.221 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:55:56.222 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 22:56:02.510 [http-nio-8081-exec-1] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para actualizar datos curiosos con ID 31 recibida
+2023-09-24 22:56:02.511 [http-nio-8081-exec-1] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para modificar datos curiosos con ID 31 recibida
+2023-09-24 22:56:02.511 [http-nio-8081-exec-1] INFO  c.a.a.Bl.DatosVisitorImpl - Visitando método para modificar datos con ID 31
+2023-09-24 22:56:02.544 [http-nio-8081-exec-1] INFO  c.a.a.Bl.DatosVisitorImpl - Datos con ID 31 modificados exitosamente
+2023-09-24 22:56:02.545 [http-nio-8081-exec-1] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos con ID 31 modificados exitosamente
+2023-09-24 22:56:02.545 [http-nio-8081-exec-1] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos con ID 31 actualizados exitosamente
+2023-09-24 22:56:02.558 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:56:02.558 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:56:02.562 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:56:02.562 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 22:56:06.338 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para eliminar datos curiosos con ID 31 recibida
+2023-09-24 22:56:06.338 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para eliminar datos curiosos con ID 31 recibida
+2023-09-24 22:56:06.339 [http-nio-8081-exec-4] INFO  c.a.a.Bl.DatosVisitorImpl - Visitando método para eliminar datos con ID 31
+2023-09-24 22:56:06.364 [http-nio-8081-exec-4] INFO  c.a.a.Bl.DatosVisitorImpl - Datos con ID 31 eliminados exitosamente
+2023-09-24 22:56:06.364 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos con ID 31 eliminados exitosamente
+2023-09-24 22:56:06.364 [http-nio-8081-exec-4] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos con ID 31 eliminados exitosamente
+2023-09-24 22:56:06.379 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:56:06.379 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:56:06.384 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:56:06.384 [http-nio-8081-exec-5] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 22:56:09.654 [http-nio-8081-exec-6] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 22:56:09.655 [http-nio-8081-exec-6] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 22:56:09.659 [http-nio-8081-exec-6] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 22:56:09.660 [http-nio-8081-exec-6] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 23:01:01.451 [http-nio-8081-exec-8] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 23:01:01.452 [http-nio-8081-exec-8] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 23:01:01.461 [http-nio-8081-exec-8] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 23:01:01.462 [http-nio-8081-exec-8] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 23:01:39.536 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 23:01:39.543 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 23:01:39.551 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 23:01:39.551 [http-nio-8081-exec-9] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 23:02:11.427 [http-nio-8081-exec-10] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 23:02:11.428 [http-nio-8081-exec-10] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 23:02:11.443 [http-nio-8081-exec-10] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 23:02:11.443 [http-nio-8081-exec-10] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 23:04:57.656 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 23:04:57.657 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 23:04:57.664 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 23:04:57.664 [http-nio-8081-exec-2] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
+2023-09-24 23:05:51.556 [http-nio-8081-exec-3] INFO  c.a.arquitecturaBackend.Api.DatosApi - Solicitud para obtener datos curiosos del usuario recibida
+2023-09-24 23:05:51.557 [http-nio-8081-exec-3] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Solicitud para obtener todos los datos curiosos recibida
+2023-09-24 23:05:51.567 [http-nio-8081-exec-3] INFO  c.a.arquitecturaBackend.Bl.DatosBl - Datos curiosos obtenidos exitosamente
+2023-09-24 23:05:51.568 [http-nio-8081-exec-3] INFO  c.a.arquitecturaBackend.Api.DatosApi - Datos curiosos obtenidos exitosamente
