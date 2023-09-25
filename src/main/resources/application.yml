@@ -1,6 +1,11 @@
 server:
   port: 8081
+
 spring:
+  security:
+    enabled: false
+    csrf:
+      enabled: false
   profiles:
     active: dev
   datasource:
@@ -8,11 +13,7 @@ spring:
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8080/auth/realms/arquitectura
+
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
